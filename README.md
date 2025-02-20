@@ -145,6 +145,42 @@ All project documentation is provided in the `docs/` directory:
 
 This documentation outlines the system architecture, design decisions, and future enhancements.
 
+---
+## ⚙️ Quick Workflow Guide
+
+📝 **Step 1: Select File Type**
+- 🖼️ Image (JPEG, PNG, BMP)
+- 📄 Digital PDF (Text-based)
+- 📝 Scanned PDF (Handwritten/Scanned)
+- 📃 Word Document (DOC/DOCX)
+
+➡️ **Click on your document type** (it will highlight in blue).
+
+📤 **Step 2: Upload Document**
+- Click **Choose File**.
+- Select your document.
+- ✅ File name will appear below the button.
+
+⚙️ **Step 3: Process the Document**
+- Click **Process Document**.
+- The system will:
+  - ✔️ Validate file type & content.
+  - 🔍 Extract and structure text.
+  - ⏳ Show a loading indicator.
+
+📊 **Step 4: View Results**
+- See structured results:
+  - 📑 Sections with titles & bullet points.
+  - 📝 Raw text if structure detection fails.
+
+🔄 **Step 5: Process Another File**
+- Click **← Process Another File** to upload a new document.
+
+⚠️ **Error Handling**
+- 🛑 Red error message if issues like:
+  - ❌ No file selected.
+  - ❌ Unsupported file type.
+  - ❌ Empty file.
 
 ----
 
