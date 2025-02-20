@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Processing Result</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .content-section {
+            background: white;
+            margin: 1.5rem 0;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .raw-text {
+            white-space: pre-wrap;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen p-8">
+    <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-8">
+            <h1 class="text-3xl font-bold text-gray-800 mb-2">Document Processing Result</h1>
+            <a href="/" class="text-blue-600 hover:text-blue-800">← Process Another File</a>
+        </div>
+
+        <div id="content-display">
+            <!-- Content will be populated here -->
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const displayDiv = document.getElementById('content-display');
+            
+            try {
+                const rawData = sessionStorage.getItem('processedData');
+                if (!rawData) throw new Error('No processing data found');
+                
+                const resultData = JSON.parse(rawData);
+                console.log('Processing Result:', resultData);
+
+                let contentHtml = '';
+                
+                if (resultData.content?.length > 0) {
+                    contentHtml = resultData.content.map(section => `
+                        <div class="content-section">
+                            <h2 class="text-xl font-semibold text-gray-800 mb-3">
+                                ${section.section_id}. ${section.title}
+                            </h2>
+                            ${section.subsections?.map(sub => `
+                                <div class="ml-4 my-2">
+                                    ${sub.type === 'list' ? `
+                                        <ul class="list-disc pl-6">
+                                            ${sub.items.map(item => `<li class="mb-1">${item}</li>`).join('')}
+                                        </ul>
+                                    ` : `
+                                        <p class="text-gray-600">${sub.content}</p>
+                                    `}
+                                </div>
+                            `).join('')}
+                        </div>
+                    `).join('');
+                } else {
+                    contentHtml = `
+                        <div class="content-section">
+                            <h3 class="text-lg font-semibold mb-3">Full Text Content</h3>
+                            <div class="raw-text p-4 bg-gray-50 rounded">${resultData.raw_text}</div>
+                        </div>
+                    `;
+                }
+
+                displayDiv.innerHTML = contentHtml;
+
+            } catch (error) {
+                console.error('Display Error:', error);
+                displayDiv.innerHTML = `
+                    <div class="content-section bg-red-50">
+                        <h3 class="text-red-600 font-semibold">Error</h3>
+                        <p class="text-red-500">${error.message}</p>
+                        <p class="text-sm mt-2">Check console for details</p>
+                    </div>
+                `;
+            }
+        });
+    </script>
+</body>
+</html>
