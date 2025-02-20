@@ -127,25 +127,8 @@ Here you can upload documents, select processing types, and view structured resu
 - **POST /api/process:**  
   Endpoint to upload and process documents.  
   (See detailed API documentation in the `docs/` folder.)
-
-## 📸 Screenshots
-Screenshots of the application before and after processing are available in the `screenshots/` directory:
-
-- **ui_before.png:** UI before document processing.
-- **ui_after.png:** UI after document processing.
-
-For UI/UX demonstrations, please refer to the provided screen recordings (if any).
-
-## 📚 Documentation
-All project documentation is provided in the `docs/` directory:
-
-- **Project Report:** Detailed design and implementation report (e.g., `Report.pdf`).
-- **ER Diagram:** Database design illustration (`ER_Diagram.jpeg`).
-- **UML Diagrams:** Class and sequence diagrams (`UML_ClassDiagram.jpeg`, `SystemArchitecture.png`).
-
-This documentation outlines the system architecture, design decisions, and future enhancements.
-
 ---
+
 ## ⚙️ Quick Workflow Guide
 
 📝 **Step 1: Select File Type**
@@ -181,8 +164,25 @@ This documentation outlines the system architecture, design decisions, and futur
   - ❌ No file selected.
   - ❌ Unsupported file type.
   - ❌ Empty file.
+--- 
+## 📸 Screenshots
+Screenshots of the application before and after processing are available in the `screenshots/` directory:
 
-----
+- **ui_before.png:** UI before document processing.
+- **ui_after.png:** UI after document processing.
+
+For UI/UX demonstrations, please refer to the provided screen recordings (if any).
+
+## 📚 Documentation
+All project documentation is provided in the `docs/` directory:
+
+- **Project Report:** Detailed design and implementation report (e.g., `Report.pdf`).
+- **ER Diagram:** Database design illustration (`ER_Diagram.jpeg`).
+- **UML Diagrams:** Class and sequence diagrams (`UML_ClassDiagram.jpeg`, `SystemArchitecture.png`).
+
+This documentation outlines the system architecture, design decisions, and future enhancements.
+
+---
 
 ## 📦 Dependencies
 
