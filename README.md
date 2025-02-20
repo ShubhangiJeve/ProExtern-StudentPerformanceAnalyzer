@@ -24,9 +24,9 @@ cd StudentPerformanceAnalyzer
  - **2.Create a Virtual Environment**
  -It is recommended to use a virtual environment for dependency management.
 python -m venv venv
-# Windows
+-  Windows
 venv\Scripts\activate
-# macOS/Linux
+-  macOS/Linux
 source venv/bin/activate
 
 - **3. Install Dependencies**
