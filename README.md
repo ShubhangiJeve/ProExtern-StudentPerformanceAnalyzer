@@ -34,7 +34,7 @@ StudentPerformanceAnalyzer/
 
 Open your terminal and run:
 ```bash
-[git clone https://github.com/yourusername/StudentPerformanceAnalyzer.git](https://github.com/ShubhangiJeve/ProExtern-StudentPerformanceAnalyzer.git)
+git clone https://github.com/yourusername/StudentPerformanceAnalyzer.git
 cd StudentPerformanceAnalyzer
 ```
 
