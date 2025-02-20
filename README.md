@@ -33,7 +33,48 @@ source venv/bin/activate
 Install the required libraries using:
 pip install -r requirements.txt
 
+
+
 __________________________________________________________________________________________________________________________________________________________________
+## Tesseract OCR Setup
+
+Tesseract OCR is essential for extracting text from images and scanned documents.
+
+### Download Tesseract
+
+- **Windows:**  
+  Download the installer from the [UB Mannheim Tesseract OCR](https://github.com/UB-Mannheim/tesseract/wiki) page.
+
+- **macOS:**  
+  Install via Homebrew:
+  ```bash
+  brew install tesseract
+
+### Linux
+Install via your package manager:
+```bash
+sudo apt-get install tesseract-ocr
+
+### Windows
+- **Install Tesseract** by running the downloaded installer and following the prompts.
+- The **default installation path** on Windows is typically:
+  ```makefile
+  C:\Program Files\Tesseract-OCR\tesseract.exe
+
+
+### Configure Tesseract in Your Project
+
+In your Python code (e.g., in `src/config.py`), set the Tesseract command path as follows:
+
+```python
+import pytesseract
+pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+
+### 🔄Note:
+
+If Tesseract is installed elsewhere, or you're on macOS/Linux, adjust the path accordingly or ensure that Tesseract is added to your system's PATH.
+
+________________________________________________________________________________________________________________________________________________________________
 
 ## Dependencies
 
