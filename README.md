@@ -15,7 +15,19 @@ This repository contains the complete implementation of the **Student Performanc
 - **🧹 Preprocessing & Data Cleaning**  
   - Converts images to grayscale.  
   - Future enhancements include noise reduction and thresholding for improved OCR accuracy.
+---
+## 📂 Repository Structure
 
+```plaintext
+StudentPerformanceAnalyzer/
+├── 📁 Document/             # Documentation, reports, and diagrams
+├── 📁 screenshots/          # UI screenshots and screen recordings
+├── 📁 templates/            # Documentation, reports, and diagrams
+├── 🗋 main.py                # Source Code for the applicaion
+├── 🗋 requirements.txt       # Project dependencies
+├── 🗋 README.md              # Project overview and setup instructions
+```
+--- 
 ## 🛠️ Setup & Installation
 
 ### 1. Clone the Repository
