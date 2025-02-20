@@ -35,5 +35,16 @@ pip install -r requirements.txt
 
 __________________________________________________________________________________________________________________________________________________________________
 
+## Dependencies
 
+- **Python 3.8+**
+- **FastAPI**: For building the RESTful API.
+- **Uvicorn**: ASGI server for FastAPI.
+- **pytesseract**: Python wrapper for Tesseract OCR.
+- **Pillow (PIL)**: For image processing.
+- **PyPDF2** & **PyMuPDF**: For handling PDF documents.
+- **python-docx**: For processing DOCX files.
+- **Tailwind CSS**: Used in the frontend for styling.
+
+For a complete list of dependencies, please refer to the [requirements.txt](requirements.txt) file.
 
