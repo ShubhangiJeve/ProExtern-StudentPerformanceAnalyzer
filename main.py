@@ -20,8 +20,8 @@ import fitz  # PyMuPDF
 app = FastAPI(title="Smart Document Processor")
 
 # Configure paths
-pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
-POPPLER_PATH = r"C:\poppler\bin"
+pytesseract.pytesseract.tesseract_cmd = "" # Add Your Path 
+# POPPLER_PATH = r"C:\poppler\bin"  "" # Add Your Path If required 
 
 # CORS configuration
 app.add_middleware(
