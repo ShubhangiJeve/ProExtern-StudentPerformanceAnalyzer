@@ -1,6 +1,6 @@
 # ProExtern-StudentPerformanceAnalyzer
 
-This repository contains the complete implementation of the  Student Performance Analyzer &amp; Career Recommendation System. The system is designed to process various document formats (PDF, DOCX, images), extract text using advanced OCR techniques, and analyze the content to generate personalized career recommendations based on student performance.
+This repository contains the complete implementation of the **Student Performance Analyzer & Career Recommendation System**. The system is designed to process various document formats (PDF, DOCX, images), extract text using advanced OCR techniques, and analyze the content to generate personalized career recommendations based on student performance.
 
 ## 🚀 Features & Functionalities
 
@@ -14,29 +14,46 @@ This repository contains the complete implementation of the  Student Performance
 
 - **🧹 Preprocessing & Data Cleaning**  
   - Converts images to grayscale.  
-  - Future enhancements include noise reduction and thresholding for improve
+  - Future enhancements include noise reduction and thresholding for improved OCR accuracy.
 
 ## 🛠️ Setup & Installation
-- **1. Clone the Repository**
-- Open your terminal and run:git clone https://github.com/yourusername/StudentPerformanceAnalyzer.git
+
+### 1. Clone the Repository
+
+Open your terminal and run:
+```bash
+git clone https://github.com/yourusername/StudentPerformanceAnalyzer.git
 cd StudentPerformanceAnalyzer
+```
 
- - **2.Create a Virtual Environment**
- -It is recommended to use a virtual environment for dependency management.
+### 2. Create a Virtual Environment
+
+It is recommended to use a virtual environment for dependency management.
+
+```bash
 python -m venv venv
--  Windows: 
+```
+
+#### Windows:
+```bash
 venv\Scripts\activate
--  macOS/Linux: 
+```
+
+#### macOS/Linux:
+```bash
 source venv/bin/activate
+```
 
-- **3. Install Dependencies**
+### 3. Install Dependencies
+
 Install the required libraries using:
+```bash
 pip install -r requirements.txt
+```
 
+---
 
-
-__________________________________________________________________________________________________________________________________________________________________
-## Tesseract OCR Setup
+## 🖥️ Tesseract OCR Setup
 
 Tesseract OCR is essential for extracting text from images and scanned documents.
 
@@ -49,18 +66,21 @@ Tesseract OCR is essential for extracting text from images and scanned documents
   Install via Homebrew:
   ```bash
   brew install tesseract
+  ```
 
-### Linux
-Install via your package manager:
-```bash
-sudo apt-get install tesseract-ocr
+- **Linux:**  
+  Install via your package manager:
+  ```bash
+  sudo apt-get install tesseract-ocr
+  ```
 
-### Windows
-- **Install Tesseract** by running the downloaded installer and following the prompts.
+### Install Tesseract on Windows
+
+- Run the downloaded installer and follow the prompts.
 - The **default installation path** on Windows is typically:
-  ```makefile
+  ```
   C:\Program Files\Tesseract-OCR\tesseract.exe
-
+  ```
 
 ### Configure Tesseract in Your Project
 
@@ -69,14 +89,14 @@ In your Python code (e.g., in `src/config.py`), set the Tesseract command path a
 ```python
 import pytesseract
 pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+```
 
-### 🔄Note:
+### 🔄 Note:
+If Tesseract is installed elsewhere, or you're on macOS/Linux, adjust the path accordingly or ensure that **Tesseract is added to your system's PATH**.
 
-If Tesseract is installed elsewhere, or you're on macOS/Linux, adjust the path accordingly or ensure that Tesseract is added to your system's PATH.
+---
 
-________________________________________________________________________________________________________________________________________________________________
-
-## Dependencies
+## 📦 Dependencies
 
 - **Python 3.8+**
 - **FastAPI**: For building the RESTful API.
