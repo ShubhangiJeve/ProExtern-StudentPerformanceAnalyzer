@@ -1,0 +1,15 @@
+fastapi
+uvicorn
+pytesseract
+docx
+PyPDF2
+fitz
+Pillow
+shutil
+subprocess
+datetime
+json
+re
+os
+io
+typing
