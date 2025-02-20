@@ -96,6 +96,47 @@ If Tesseract is installed elsewhere, or you're on macOS/Linux, adjust the path a
 
 ---
 
+## 🖥️ Usage
+
+### Start the FastAPI Server:
+```bash
+uvicorn src.main:app --reload
+```
+This starts the server in development mode with auto-reload enabled.
+
+### Access the Web Interface:
+Open your browser and navigate to:
+```
+http://localhost:8000/
+```
+Here you can upload documents, select processing types, and view structured results.
+
+### API Endpoints:
+- **POST /api/process:**  
+  Endpoint to upload and process documents.  
+  (See detailed API documentation in the `docs/` folder.)
+
+## 📸 Screenshots
+Screenshots of the application before and after processing are available in the `screenshots/` directory:
+
+- **ui_before.png:** UI before document processing.
+- **ui_after.png:** UI after document processing.
+
+For UI/UX demonstrations, please refer to the provided screen recordings (if any).
+
+## 📚 Documentation
+All project documentation is provided in the `docs/` directory:
+
+- **Project Report:** Detailed design and implementation report (e.g., `Report.pdf`).
+- **ER Diagram:** Database design illustration (`ER_Diagram.png`).
+- **UML Diagrams:** Class and sequence diagrams (`UML_ClassDiagram.png`, `SystemArchitecture.png`).
+- **API Documentation:** Endpoints and usage instructions.
+
+This documentation outlines the system architecture, design decisions, and future enhancements.
+
+
+----
+
 ## 📦 Dependencies
 
 - **Python 3.8+**
@@ -108,4 +149,11 @@ If Tesseract is installed elsewhere, or you're on macOS/Linux, adjust the path a
 - **Tailwind CSS**: Used in the frontend for styling.
 
 For a complete list of dependencies, please refer to the [requirements.txt](requirements.txt) file.
+
+
+
+
+
+
+
 
