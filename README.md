@@ -34,7 +34,7 @@ StudentPerformanceAnalyzer/
 
 Open your terminal and run:
 ```bash
-git clone https://github.com/yourusername/StudentPerformanceAnalyzer.git
+[git clone https://github.com/yourusername/StudentPerformanceAnalyzer.git](https://github.com/ShubhangiJeve/ProExtern-StudentPerformanceAnalyzer.git)
 cd StudentPerformanceAnalyzer
 ```
 
@@ -112,7 +112,7 @@ If Tesseract is installed elsewhere, or you're on macOS/Linux, adjust the path a
 
 ### Start the FastAPI Server:
 ```bash
-uvicorn src.main:app --reload
+uvicorn main:app --reload
 ```
 This starts the server in development mode with auto-reload enabled.
 
@@ -140,9 +140,8 @@ For UI/UX demonstrations, please refer to the provided screen recordings (if any
 All project documentation is provided in the `docs/` directory:
 
 - **Project Report:** Detailed design and implementation report (e.g., `Report.pdf`).
-- **ER Diagram:** Database design illustration (`ER_Diagram.png`).
-- **UML Diagrams:** Class and sequence diagrams (`UML_ClassDiagram.png`, `SystemArchitecture.png`).
-- **API Documentation:** Endpoints and usage instructions.
+- **ER Diagram:** Database design illustration (`ER_Diagram.jpeg`).
+- **UML Diagrams:** Class and sequence diagrams (`UML_ClassDiagram.jpeg`, `SystemArchitecture.png`).
 
 This documentation outlines the system architecture, design decisions, and future enhancements.
 
